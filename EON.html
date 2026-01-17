@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Един от нас</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+    <section class="join-section">
+        <h2>Стани един от нас</h2>
+        <p>Попълни формата и ще се свържем с теб.</p>
+
+     <form class="join-form" onsubmit=" return validateForm()">
+         <label for="fname">Име: </label>
+         <input type="text" id="fname" name="fname" required>
+
+         <label for="lname">Фамилия: </label>
+         <input type="text" id="lname" name="lname" required>
+
+         <label for="email">Имейл: </label>
+         <input type="text" id="email" name="email" required>
+
+         <label for="reason">Защо искаш да се присъединиш:</label>
+         <input type="text" id="reason" name="reason" required>
+
+        <button type="submit">Изпрати</button>
+         <button type="reset">Изчисти формуляра</button>
+        </form>
+    </section>
+
+    <script src="join.js"></script>
+</body>
+</html>
