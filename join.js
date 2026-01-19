@@ -21,5 +21,5 @@ function validateForm() {
 
     //reason
 
-    else return alert("Успешно се регистрирахте, ще се свържем с Вас скоро!");
+    else return alert("Успешно се регистрирахте!");
 }
