@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест за стрес</title>
+    <link rel="stylesheet" href="stressTest.css">
+    <script src="stressTest.js"></script>
+</head>
+<body>
+    <div class="stressTest-container">
+        <div class="start-screen" id="start-screen">
+            <h1>Тест за ниво на стреса</h1>
+            <button class="start-button" id="start-button">Започни теста</button>
+        </div>
+
+
+        <div class="quiz-header hide">
+            <h1>Тест за ниво на стреса</h1>
+            <div class="quiz-info">
+                <span class="question-count">Въпрос:
+                    <span id="current">1</span>
+                    /<span id="total">10</span>
+                </span>
+            </div>
+        </div>
+        <div class="quiz-body hide">
+            <div class="question-container">
+                <h2 id="question">Въпроооос</h2>
+                    <div class="option-container">
+                        <div class="option">
+                            <input type="radio" id="answer1" name="answer" class="answer">
+                            <label for="answer1" id="a1_text">А) </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="answer2" name="answer" class="answer">
+                            <label for="answer2" id="a2_text">Б) </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="answer3" name="answer" class="answer">
+                            <label for="answer3" id="a3_text">В) </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="answer4" name="answer" class="answer">
+                            <label for="answer4" id="a4_text">Г) </label>
+                        </div>
+                    </div>
+            </div>
+            <button id="submit" class="submit-button">Завърши теста</button>
+        </div>
+
+        <div class="result-container hide">
+            <h2> Завършихте теста! </h2>
+            <p> Твоето ниво: <span id="final-score">0</span>/100</p>
+            <p id="final-score-message">Текст</p>
+            <button id="restart" class="restart-button">Започни отначало</button>
+        </div>
+    </div>
+</body>
+</html>
