@@ -1,7 +1,8 @@
 function validateForm() {
-    let name = document.getElementById("name").value;
-    let lastname = document.getElementById("lastname").value;
+    let name = document.getElementById("fname").value;
+    let lastname = document.getElementById("lname").value;
     let email = document.getElementById("email").value;
+
 
     if (name.length < 2) {
         alert("Името трябва да е поне 2 символа");
@@ -18,5 +19,7 @@ function validateForm() {
         return false;
     }
 
-    return true;
+    //reason
+
+    else return alert("Успешно се регистрирахте, ще се свържем с Вас скоро!");
 }
