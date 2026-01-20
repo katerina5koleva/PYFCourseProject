@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* Сменено на Червено и Оранжево */
+    background: linear-gradient(135deg, #d63031 0%, #e67e22 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnqvTest-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+}
+.start-screen {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    min-height: auto !important;
+    padding: 40px !important;
+    width: 100% !important;
+}
+
+.start-screen h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.quiz-header h1 {
+    color: #333;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    flex-grow: 1;
+}
+
+.result-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+}
+
+button {
+    /* Сменено на наситено Червено */
+    background-color: #d63031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* Сменено на Оранжево при посочване */
+    background-color: #e67e22;
+}
+
+
+.quiz-info {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-left: 20px;
+    font-weight: bold;
+    /* Сменено на Червено */
+    color: #d63031;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.question-count {
+    white-space: nowrap;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.option-container {
+    display: grid;
+    gap: 10px;
+}
+
+.option {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e9ecef;
+}
+
+.option input[type='radio'] {
+    display: none;
+}
+
+.option label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    position: relative;
+}
+
+.option label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    /* Сменено на Червено */
+    border: 2px solid #d63031;
+    border-radius: 50%;
+}
+
+.option input[type="radio"]:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    /* Сменено на Оранжево */
+    background-color: #e67e22;
+    border-radius: 50%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.result-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+#final-score {
+    /* Сменено на Червено */
+    color: #d63031;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .quiz-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
