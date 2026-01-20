@@ -6,12 +6,15 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
+    position: relative;
 }
 
 .navbar {
@@ -69,7 +72,7 @@ body {
 .join-section {
     background: #ffffff;
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Компактна и красива кутийка */
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -77,6 +80,7 @@ body {
     overflow: hidden;
 }
 
+/* Декоративна линия отгоре (Лилаво към Зелено) */
 .join-section::before {
     content: '';
     position: absolute;
@@ -89,7 +93,7 @@ body {
 
 .join-section h2 {
     text-align: center;
-    color: #6c5ce7;
+    color: #6c5ce7; /* Лилаво */
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
     font-size: 1.8rem;
@@ -112,7 +116,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     color: #2d3436;
-    margin-bottom: -10px;
+    margin-bottom: -10px; /* Приближава етикета до полето */
 }
 
 .join-form input {
@@ -125,13 +129,14 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Когато потребителят кликне в полето - светва в Зелено */
 .join-form input:focus {
     border-color: #00b894;
     background: #ffffff;
     box-shadow: 0 0 8px rgba(0, 184, 148, 0.1);
 }
 
-
+/* Бутоните */
 .join-form button {
     padding: 14px;
     border: none;
@@ -144,6 +149,7 @@ body {
     letter-spacing: 1px;
 }
 
+/* Главният бутон - Изпрати (Лилав) */
 button[type="submit"] {
     background: #6c5ce7;
     color: white;
@@ -152,11 +158,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #00b894;
+    background: #00b894; /* Сменя се на Зелено при посочване */
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
 }
 
+/* Бутонът за изчистване (Дискретен) */
 button[type="reset"] {
     background: transparent;
     color: #b2bec3;
@@ -165,9 +172,10 @@ button[type="reset"] {
 }
 
 button[type="reset"]:hover {
-    color: #e63946;
+    color: #e63946; /* Червено само при изчистване */
 }
 
+/* Адаптивност за малки екрани */
 @media (max-width: 480px) {
     .join-section {
         padding: 25px;

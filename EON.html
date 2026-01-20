@@ -2,13 +2,10 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Опознай себе си</title>
+    <title>Един от нас</title>
     <link rel="stylesheet" href="join.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
         <a href="final.html" class="logo">Put yourself first</a>
@@ -21,8 +18,6 @@
         </ul>
     </div>
 </nav>
-
-<main class="main-content">
     <section class="join-section">
         <h2>Свържи се с нас</h2>
         <p>Попълни формата и ние ще се свържем с теб възможно най-скоро.</p>
@@ -33,17 +28,23 @@
             <label for="lname">Фамилия: </label>
             <input type="text" id="lname" name="lname" required>
 
-            <label for="email">Имейл</label>
-            <input type="email" id="email" placeholder="email@example.com" required>
+         <label for="email">Имейл: </label>
+         <input type="text" id="email" name="email" required>
 
-            <label for="message">Съобщение</label>
-            <input type="text" id="message" placeholder="Как можем да помогнем?" required>
+         <label for="password">Парола: </label>
+         <input type="text" id="password" name="password" required>
 
-            <button type="submit">Изпрати</button>
-            <button type="reset">Изчисти</button>
+         <label for="reason">Защо искаш да се присъединиш:</label>
+         <input type="text" id="reason" name="reason" required>
+
+         <label for="interview">Интервю:</label>
+         <input type="datetime-local" id="interview" name="interview" required>
+
+
+         <button type="submit">Изпрати</button>
+         <button type="reset">Изчисти формуляра</button>
         </form>
     </section>
-</main>
 
 <footer class="main-footer">
     <div class="footer-container">

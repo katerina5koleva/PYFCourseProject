@@ -20,14 +20,16 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0 4px 20px rgba(108, 92, 231, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
     border-bottom: 2px solid #a29bfe;
+    width: 100% !important;
 }
 
 .nav-container {
-    width: 90%;
+    width: 100% !important;
     max-width: 1300px;
     margin: 0 auto;
     display: flex;

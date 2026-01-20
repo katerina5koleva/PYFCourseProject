@@ -19,14 +19,16 @@ body {
     display: flex;
     align-items: center;
     box-shadow: 0 4px 20px rgba(108, 92, 231, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
     border-bottom: 2px solid #a29bfe;
+    width: 100% !important;
 }
 
 .nav-container {
-    width: 90%;
+    width: 100% !important;
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -203,6 +205,65 @@ h1, h2, h3 {
     top: 0; left: 0; width: 100%; height: 100%;
 }
 
+.main-footer {
+    background: linear-gradient(135deg, #9f96e8 0%, #444378 100%);
+    color: #ffffff;
+    padding: 70px 0 30px 0;
+    margin-top: 80px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-info h3, .footer-contact h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fab1a0;
+}
+
+.footer-info p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.footer-contact a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.footer-contact a:hover {
+    background: #ffffff;
+    color: #6c5ce7;
+    transform: translateX(10px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 @media (max-width: 900px) {
     .page {
         flex-direction: column;
@@ -222,5 +283,11 @@ h1, h2, h3 {
 
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
