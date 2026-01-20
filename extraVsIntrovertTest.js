@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         finalScoreElement.textContent = totalScore;
 
-        let personalityType, message, color;
+        let personalityType, color;
 
         if (totalScore >= 0 && totalScore <= 20) {
             personalityType = "Ярко изразен интроверт";
