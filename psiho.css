@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Тъмен, елегантен фон, за да изпъкне бялата кутия */
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Центрира вертикално */
+    justify-content: center; /* Центрира хоризонтално */
+    padding: 20px;
+}
+
+.join-section {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px; /* Компактна и красива кутийка */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Декоративна линия отгоре (Лилаво към Зелено) */
+.join-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #6c5ce7, #00b894);
+}
+
+.join-section h2 {
+    text-align: center;
+    color: #6c5ce7; /* Лилаво */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.join-section p {
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.join-form label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2d3436;
+    margin-bottom: -10px; /* Приближава етикета до полето */
+}
+
+.join-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #f1f2f6;
+    background: #f8f9fa;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Когато потребителят кликне в полето - светва в Зелено */
+.join-form input:focus {
+    border-color: #00b894;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 184, 148, 0.1);
+}
+
+/* Бутоните */
+.join-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Главният бутон - Изпрати (Лилав) */
+button[type="submit"] {
+    background: #6c5ce7;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+button[type="submit"]:hover {
+    background: #00b894; /* Сменя се на Зелено при посочване */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
+}
+
+/* Бутонът за изчистване (Дискретен) */
+button[type="reset"] {
+    background: transparent;
+    color: #b2bec3;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+button[type="reset"]:hover {
+    color: #e63946; /* Червено само при изчистване */
+}
+
+/* Адаптивност за малки екрани */
+@media (max-width: 480px) {
+    .join-section {
+        padding: 25px;
+    }
+}
