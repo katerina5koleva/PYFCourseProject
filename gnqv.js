@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const finalScoreElement = document.getElementById('final-score');
     const finalScoreMessageElement = document.getElementById('final-score-message');
     const psychoBtn = document.getElementById('psycho-btn');
+    const blogBtn = document.getElementById('blog-btn');
 
     const answerElements = [
         { radio: document.getElementById('answer1'), label: document.getElementById('a1_text') },
@@ -78,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
     restartButton.addEventListener('click', restartQuiz);
     psychoBtn.addEventListener('click', function () {
         window.open("psiho.html", "_blank"); });
+    blogBtn.addEventListener('click', function() {
+        window.open("Anger.html", "_blank"); });
 
     function startQuiz() {
         startScreen.classList.add('hide');

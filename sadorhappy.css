@@ -83,7 +83,49 @@ button:hover {
     color: #333;
 }
 
+.blog-button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 10px 0 25px 0;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
 
+.blog-button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.psycho-button {
+    background: linear-gradient(135deg, #e63946, #dc143c); /* Червен градиент за важност */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin: 10px 0 25px 0;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.psycho-button:hover {
+    background: linear-gradient(135deg, #ff6b6b, #e63946);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+}
 .quiz-info {
     display: flex;
     align-items: center;

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const finalScoreElement = document.getElementById('final-score');
     const finalScoreMessageElement = document.getElementById('final-score-message');
     const psychoBtn = document.getElementById('psycho-btn');
+    const blogBtn = document.getElementById('blog-btn');
 
     const answerElements = [
         { radio: document.getElementById('answer1'), label: document.getElementById('a1_text') },
@@ -79,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
     restartButton.addEventListener('click', restartQuiz);
     psychoBtn.addEventListener('click', function () {
         window.open("psiho.html", "_blank"); });
+    blogBtn.addEventListener('click', function() {
+        window.open("HorS.html", "_blank"); });
 
     function startQuiz() {
         startScreen.classList.add('hide');
@@ -167,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         finalScoreMessageElement.style.color = color;
 
         const psychoContainer = document.getElementById('psycho-container');
-        if (totalScore > 50) { // Променете на > 75 ако предпочитате
+        if (totalScore < 50) { // Променете на > 75 ако предпочитате
             psychoContainer.classList.remove('hide');
         } else {
             psychoContainer.classList.add('hide');
