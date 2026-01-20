@@ -148,19 +148,19 @@ document.addEventListener('DOMContentLoaded', function() {
         if (totalScore <= 20) {
             level = "Много ниско";
             message = "Вие сте изключително спокоен и уравновесен човек. Продължавайте в същия дух!";
-            color = "#00b894"; // Зелено
+            color = "#00b894";
         } else if (totalScore <= 50) {
             level = "Умерено";
             message = "Контролирате гнева си добре, но има моменти, в които емоциите ви вземат превес.";
-            color = "#ff9248"; // Оранжево
+            color = "#ff9248";
         } else if (totalScore <= 75) {
             level = "Високо";
             message = "Често се ядосвате и това може да вреди на здравето и отношенията ви. Опитайте дихателни упражнения.";
-            color = "#e63946"; // Червено
+            color = "#e63946";
         } else {
             level = "Много високо";
             message = "Нивото ви на гняв е опасно високо. Препоръчва се консултация със специалист за овладяване на емоциите.";
-            color = "#c02424"; // Наситено червено
+            color = "#c02424";
         }
 
         finalScoreMessageElement.innerHTML = `<strong>Ниво на гняв: ${level}</strong><br>${message}`;

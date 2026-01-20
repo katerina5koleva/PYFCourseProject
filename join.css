@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* Тъмен, елегантен фон, за да изпъкне бялата кутия */
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     min-height: 100vh;
     display: flex;
