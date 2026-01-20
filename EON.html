@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Един от нас</title>
     <link rel="stylesheet" href="join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar">
     <div class="nav-container">
         <a href="final.html" class="logo">Put yourself first</a>
@@ -18,6 +20,8 @@
         </ul>
     </div>
 </nav>
+
+<main class="main-content">
     <section class="join-section">
         <h2>Свържи се с нас</h2>
         <p>Попълни формата и ние ще се свържем с теб възможно най-скоро.</p>
@@ -25,43 +29,26 @@
             <label for="name">Име</label>
             <input type="text" id="name" placeholder="Твоето име..." required>
 
-            <label for="lname">Фамилия: </label>
+            <label for="lname">Фамилия:</label>
             <input type="text" id="lname" name="lname" required>
 
-         <label for="email">Имейл: </label>
-         <input type="text" id="email" name="email" required>
+            <label for="email">Имейл:</label>
+            <input type="email" id="email" name="email" required>
 
-         <label for="password">Парола: </label>
-         <input type="text" id="password" name="password" required>
+            <label for="password">Парола:</label>
+            <input type="password" id="password" name="password" required>
 
-         <label for="reason">Защо искаш да се присъединиш:</label>
-         <input type="text" id="reason" name="reason" required>
+            <label for="reason">Защо искаш да се присъединиш:</label>
+            <input type="text" id="reason" name="reason" required>
 
-         <label for="interview">Интервю:</label>
-         <input type="datetime-local" id="interview" name="interview" required>
+            <label for="interview">Интервю:</label>
+            <input type="datetime-local" id="interview" name="interview" required>
 
-
-         <button type="submit">Изпрати</button>
-         <button type="reset">Изчисти формуляра</button>
+            <button type="submit">Изпрати</button>
+            <button type="reset">Изчисти формуляра</button>
         </form>
     </section>
-
-<footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-info">
-            <h3>Създатели</h3>
-            <p>Катерина Колева и Деница Станчева</p>
-        </div>
-        <div class="footer-contact">
-            <h3>Контакти при проблеми</h3>
-            <a href="mailto:stu2501551002@uni-plovdiv.bg">stu2501551002@uni-plovdiv.bg</a>
-            <a href="mailto:stu2501551014@uni-plovdiv.bg">stu2501551014@uni-plovdiv.bg</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        &copy; 2026 Всички права запазени.
-    </div>
-</footer>
+</main>
 
 </body>
 </html>
