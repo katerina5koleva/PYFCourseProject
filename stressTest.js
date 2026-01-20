@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (totalScore <= 50) {
                 stressLevel = "Умерено";
                 message = "Имате нормално ниво на стрес. Обърнете внимание на релаксацията и почивката.";
-                color = "#FFC107"; // жълто вместо "yellow"
+                color = "#FFC107";
             } else if (totalScore <= 75) {
                 stressLevel = "Високо";
                 message = "Нивото на стрес е повишено. Препоръчва се да намерите начини за релакс и да се консултирате със специалист, ако продължи.";

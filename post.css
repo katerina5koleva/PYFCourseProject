@@ -77,21 +77,18 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Специфични цветове за всяка категория */
-
-/* Стрес - Оранжево */
 .post-card.stress { border-top-color: #9b59b6; }
 .post-card.stress .btn-text { background-color: #9b59b6; }
 
-/* Щастие - Жълто/Синьо баланс */
+
 .post-card.happiness { border-top-color: #b38830; }
 .post-card.happiness .btn-text { background-color: #b38830; }
 
-/* Личност - Лилаво */
+
 .post-card.personality { border-top-color: green; }
 .post-card.personality .btn-text { background-color: green; }
 
-/* Гняв - Червено */
+
 .post-card.anger { border-top-color: #d63031; }
 .post-card.anger .btn-text { background-color: #d63031; }
 
@@ -99,7 +96,6 @@ body {
     opacity: 0.8;
 }
 
-/* Адаптивност */
 @media (max-width: 650px) {
     .grid-container {
         grid-template-columns: 1fr;

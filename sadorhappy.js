@@ -97,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
         questionElement.textContent = currentQuestion.question;
 
         for (let i = 0; i < 4; i++) {
-            // Тук String.fromCharCode(1040) съответства на "А"
             answerElements[i].label.textContent = `${String.fromCharCode(1040 + i)}) ${currentQuestion.answers[i].text}`;
             answerElements[i].radio.checked = false;
         }
@@ -147,15 +146,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let state, message, color;
 
-        // Изчисляване на резултата спрямо новата тема (Максимум 100 точки)
         if (totalScore >= 80) {
             state = "Много щастлив";
             message = "Ти излъчваш позитивизъм! Продължавай да споделяш тази радост със света.";
-            color = "#00b894"; // Зелено
+            color = "#00b894";
         } else if (totalScore >= 50) {
             state = "Емоционален баланс";
             message = "Ти си в хармония със себе си. Намираш добрия баланс в ежедневието.";
-            color = "#6c5ce7"; // Лилаво
+            color = "#6c5ce7";
         } else if (totalScore >= 25) {
             state = "Лека тъга / Меланхолия";
             message = "Нормално е понякога да се чувстваме по-ниско. Подари си време за любимо хоби.";
@@ -163,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             state = "Дълбока тъга";
             message = "Преминаваш през труден период. Не се притеснявай да потърсиш подкрепа от близък човек.";
-            color = "#e63946"; // Червено
+            color = "#e63946";
         }
 
         finalScoreMessageElement.innerHTML = `<strong>Твоето състояние: ${state}</strong><br>${message}`;

@@ -6,7 +6,6 @@
 }
 
 body {
-    /* Променено на Синьо и Жълто по равно */
     background: linear-gradient(135deg, #3498db 0%, #f1c40f 100%);
     min-height: 100vh;
     display: flex;
@@ -66,7 +65,6 @@ body {
 }
 
 button {
-    /* Променено на Синьо */
     background-color: #3498db;
     color: white;
     border: none;
@@ -78,7 +76,6 @@ button {
 }
 
 button:hover {
-    /* Променено на Жълто при ховър */
     background-color: #f1c40f;
     color: #333;
 }
@@ -105,7 +102,7 @@ button:hover {
 }
 
 .psycho-button {
-    background: linear-gradient(135deg, #e63946, #dc143c); /* Червен градиент за важност */
+    background: linear-gradient(135deg, #e63946, #dc143c);
     color: white;
     border: none;
     border-radius: 8px;
@@ -135,7 +132,6 @@ button:hover {
     margin-top: 0;
     margin-left: 20px;
     font-weight: bold;
-    /* Променено на Синьо */
     color: #3498db;
     min-width: 100px;
     justify-content: center;
@@ -192,7 +188,6 @@ button:hover {
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    /* Променено на Синьо */
     border: 2px solid #3498db;
     border-radius: 50%;
 }
@@ -205,7 +200,7 @@ button:hover {
     transform: translateY(-50%);
     width: 12px;
     height: 12px;
-    /* Променено на Жълто */
+
     background-color: #f1c40f;
     border-radius: 50%;
 }
@@ -230,7 +225,6 @@ button:hover {
 }
 
 #final-score {
-    /* Променено на Жълто */
     color: #f1c40f;
     font-weight: bold;
     font-size: 1.2rem;

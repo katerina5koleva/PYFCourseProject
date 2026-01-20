@@ -49,7 +49,7 @@ body {
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    border-top: 8px solid #dfe6e9; /* Цвят по подразбиране */
+    border-top: 8px solid #dfe6e9;
     position: relative;
 }
 
@@ -77,21 +77,17 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Специфични цветове за всяка категория */
 
-/* Стрес - Оранжево */
 .test-card.stress { border-top-color: #9b59b6; }
 .test-card.stress .btn-text { background-color: #9b59b6; }
 
-/* Щастие - Жълто/Синьо баланс */
 .test-card.happiness { border-top-color: #b38830; }
 .test-card.happiness .btn-text { background-color: #b38830; }
 
-/* Личност - Лилаво */
+
 .test-card.personality { border-top-color: green; }
 .test-card.personality .btn-text { background-color: green; }
 
-/* Гняв - Червено */
 .test-card.anger { border-top-color: #d63031; }
 .test-card.anger .btn-text { background-color: #d63031; }
 
@@ -99,7 +95,6 @@ body {
     opacity: 0.8;
 }
 
-/* Адаптивност */
 @media (max-width: 650px) {
     .grid-container {
         grid-template-columns: 1fr;
