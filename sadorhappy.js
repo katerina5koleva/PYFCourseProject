@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     submitButton.addEventListener('click', submitAnswer);
     restartButton.addEventListener('click', restartQuiz);
     psychoBtn.addEventListener('click', function () {
-        window.location.href = "psiho.html"; });
+        window.open("psiho.html", "_blank"); });
 
     function startQuiz() {
         startScreen.classList.add('hide');
@@ -166,11 +166,11 @@ document.addEventListener('DOMContentLoaded', function() {
         finalScoreMessageElement.innerHTML = `<strong>Твоето състояние: ${state}</strong><br>${message}`;
         finalScoreMessageElement.style.color = color;
 
-        const psychologistSection = document.getElementById('psychologist-section');
-        if (totalScore < 50) { // Променете на > 75 ако предпочитате
-            psychologistSection.classList.remove('hide');
+        const psychoContainer = document.getElementById('psycho-container');
+        if (totalScore > 50) { // Променете на > 75 ако предпочитате
+            psychoContainer.classList.remove('hide');
         } else {
-            psychologistSection.classList.add('hide');
+            psychoContainer.classList.add('hide');
         }
 
         console.log(`Тест завършен! Резултат: ${totalScore}/100`);
