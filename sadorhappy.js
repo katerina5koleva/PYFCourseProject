@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { radio: document.getElementById('answer4'), label: document.getElementById('a4_text') }
     ];
 
-    // Променени въпроси на тема Щастие/Тъга
     const questions = [
         {
             question: "Как се чувстваш, когато се събудиш сутрин?",
@@ -168,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         finalScoreMessageElement.style.color = color;
 
         const psychoContainer = document.getElementById('psycho-container');
-        if (totalScore < 50) { // Променете на > 75 ако предпочитате
+        if (totalScore < 50) {
             psychoContainer.classList.remove('hide');
         } else {
             psychoContainer.classList.add('hide');

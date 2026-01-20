@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
             finalScoreMessageElement.style.color = color;
 
             const psychoContainer = document.getElementById('psycho-container');
-            if (totalScore > 50) { // Променете на > 75 ако предпочитате
+            if (totalScore > 50) {
                 psychoContainer.classList.remove('hide');
             } else {
                 psychoContainer.classList.add('hide');

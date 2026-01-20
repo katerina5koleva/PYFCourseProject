@@ -155,7 +155,7 @@ button:hover {
 }
 
 .psycho-button {
-    background: linear-gradient(135deg, #e63946, #dc143c); /* Червен градиент за важност */
+    background: linear-gradient(135deg, #e63946, #dc143c);
     color: white;
     border: none;
     border-radius: 8px;

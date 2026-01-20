@@ -103,7 +103,7 @@ body {
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    border-top: 8px solid #dfe6e9; /* Цвят по подразбиране */
+    border-top: 8px solid #dfe6e9;
     position: relative;
 }
 
